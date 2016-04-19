@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>SOLAR</title>
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+</head>
+<body>
+    <form action="/new_grade">
+        <label for="github">Student ID:</label>
+        <input type="text" name="github" />
+        <label for="grade">Grade:</label>
+        <input type="text" name="grade" />
+        <input type="submit">
+    </form>
+</body>
+</html>

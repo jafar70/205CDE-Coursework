@@ -1,0 +1,129 @@
+#logo{
+  height:30px;
+  top:20px;
+}
+
+.foot-header{
+  color:	#F8F8FF;
+  font-weight:bold;
+  text-decoration: underline;
+  font-size:17px;
+  padding-bottom:10px;
+}
+
+#address{
+  color:	#F8F8FF;
+}
+
+body{
+  padding-top:80px;
+  background:#cce6ff;
+}
+
+.welcome{
+  text-align:center;
+}
+
+.col-md-4{
+  padding-top:20px;
+}
+
+figcaption{
+  padding-top:5px;
+}
+
+.footer{
+  background:black;
+  color:white;
+  padding-top:10px;
+}
+
+figcaption{
+  font-weight:bold;
+}
+
+.sutitle{
+  text-decoration:underline;
+}
+
+.slidebuttons{
+  padding-top:10px;
+}
+
+.aboutusbody{
+    padding-top:11px;
+}
+
+.video{
+  padding-top: 13px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+hr{
+  border-top: 1px solid black;
+}
+
+.jumbotron{
+  background-image: url("http://static.hdw.eweb4.com/media/wallpapers_dl/1/26/255344-underwater-sand.jpg");
+}
+
+.jumbotron-special{
+   background-image: url("../images/banner.jpg");
+}
+
+.jumbotron-special1{
+  background-image: url("../images/banner2.jpg");
+}
+
+.jumbotron-special2{
+    background-image: url("../images/banner3.jpg");
+}
+
+.soc-body{
+  padding-top: 10px;
+}
+
+.jumbotron-special3{
+  background-image: url("../images/banner4.gif");
+}
+
+.jumbotron-special4{
+  background-image: url("../images/banner5.jpg");
+}
+
+.events-body{
+  background-color: white;
+}
+
+.jumbotron-special5{
+  background-image: url("../images/banner6.jpg");
+}
+
+.google-maps{
+  padding-bottom:20px;
+}
+
+.jumbotron-special6{
+  background: #ff3600;
+  color:white;
+  
+}
+
+.contact-form, .contact-info{
+  padding-bottom: 20px;
+}
