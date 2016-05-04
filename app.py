@@ -1,5 +1,3 @@
-import solar_app
-
 from flask import Flask, render_template, request
 import os
 
@@ -18,9 +16,13 @@ def get_sid():
 
 
 
+
 @app.route("/add_student")
 def add_new_student():
     return render_template("add_student.html")
+
+
+
 
 
 
@@ -28,6 +30,10 @@ def add_new_student():
 def add_new_grade():
     # Get student_github, project_title, and grade from Grades 
     return render_template("add_grade.html")
+
+
+
+
 
 
 
