@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Coventry University Student Union</title>
-    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/logo.png') }}">
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   </head>
   <body>
@@ -24,26 +24,26 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">
-            <img id="logo" alt="Coventry University Student Union" src="images/logo.png"/>
+          <a class="navbar-brand" href="/">
+            <img id="logo" alt="Coventry University Student Union" src="{{ url_for('static', filename='images/logo.png') }}"/>
           </a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-left">
-            <li><a href="index.html">Home</a></li>       
-            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="/">Home</a></li>       
+            <li><a href="/aboutus">About Us</a></li>
             <li class="dropdown">
-              <a href="opportunities.html" class="dropdown-toggle" data-toggle="dropdown">Opportunities <b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Opportunities <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="sports.html">Sports</a></li>
-                <li><a href="societies.html">Societies</a></li>
-                <li class="active"><a href="volunteering.html">Volunteering</a></li>
-                <li><a href="events.html">Events</a></li>
+                <li><a href="/sports">Sports</a></li>
+                <li><a href="/societies">Societies</a></li>
+                <li class="active"><a href="/volunteering">Volunteering</a></li>
+                <li><a href="/events">Events</a></li>
               </ul>
             </li>            
-            <li><a href="location.html">Location</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
-            <li><a href="https://bootstrap-jafar70.c9users.io/">SOLAR</a></li>
+            <li><a href="/location">Location</a></li>
+            <li><a href="/contactus">Contact Us</a></li>
+            <li><a href="/home">SOLAR</a></li>
           </ul>
           <form method="get" action="http://www.google.com/search" class="navbar-form" role="search">
         <div class="input-group">
@@ -87,7 +87,7 @@
         
         <div class="col-xs-18 col-sm-6 col-md-3">
           <div class="thumbnail">
-            <img src="images/team1.jpg" alt="Adelaide">
+            <img src="{{ url_for('static', filename='images/team1.jpg') }}" alt="Adelaide">
               <div class="caption">
                 <h4>Adelaide Barwood, 2nd year Food & Nutrition</h4>
                 <p>Hi I am Adelaide and I am currently in my second year studying Food and Nutrition. I originally started volunteering in my first year as it was an easy way to gain experience needed for applying for placements in the second year.</p>
@@ -97,7 +97,7 @@
 
         <div class="col-xs-18 col-sm-6 col-md-3">
           <div class="thumbnail">
-            <img src="images/team2.jpg" alt="Lore">
+            <img src="{{ url_for('static', filename='images/team2.jpg') }}" alt="Lore">
               <div class="caption">
                 <h4>Loredana Straut, 2nd year Psychology</h4>
                 <p>Hi there! My name is Lore and I am a second year Psychology student. As part of the Student Volunteering Team, my role is to create a stimulating environment for you to get inspired and start volunteering. Once you start, you cannot stop!</p>
@@ -107,7 +107,7 @@
 
         <div class="col-xs-18 col-sm-6 col-md-3">
           <div class="thumbnail">
-            <img src="images/team3.jpg" alt="Cheryl">
+            <img src="{{ url_for('static', filename='images/team3.jpg') }}" alt="Cheryl">
               <div class="caption">
                 <h4>Cheryl Chan, 3rd year Exercise, Nutrition & Health</h4>
                 <p>Hi, this is Cheryl from Hong Kong! I’m a third year student, studying Exercise, Nutrition and Health. I love volunteering because giving is always better than receiving. A special sense of achievement will be gained.</p>
@@ -117,7 +117,7 @@
 
         <div class="col-xs-18 col-sm-6 col-md-3">
           <div class="thumbnail">
-            <img src="images/team4.jpg" alt="Jennifer">
+            <img src="{{ url_for('static', filename='images/team4.jpg') }}" alt="Jennifer">
               <div class="caption">
                 <h4>Jennifer Odok, MA Engineering Project Management</h4>
                 <p>My name is Jennifer Odok, a Masters Degree Student of Engineering Project Management. I am your Volunteering & Employability Student Councillor. I love to give back to the community.</p>
@@ -173,6 +173,6 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
   </body>
 </html>

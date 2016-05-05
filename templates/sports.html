@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Coventry University Student Union</title>
-    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/logo.png') }}">
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   </head>
   <body>
@@ -24,26 +24,26 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">
-            <img id="logo" alt="Coventry University Student Union" src="images/logo.png"/>
+          <a class="navbar-brand" href="/">
+            <img id="logo" alt="Coventry University Student Union" src="{{ url_for('static', filename='images/logo.png') }}"/>
           </a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-left">
-            <li><a href="index.html">Home</a></li>       
-            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="/">Home</a></li>       
+            <li><a href="/aboutus">About Us</a></li>
             <li class="dropdown">
-              <a class="active" href="opportunities.html" class="dropdown-toggle" data-toggle="dropdown">Opportunities <b class="caret"></b></a>
+              <a class="active" href="#" class="dropdown-toggle" data-toggle="dropdown">Opportunities <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li class="active"><a href="sports.html">Sports</a></li>
-                <li><a href="societies.html">Societies</a></li>
-                <li><a href="volunteering.html">Volunteering</a></li>
-                <li><a href="events.html">Events</a></li>
+                <li class="active"><a href="/sports">Sports</a></li>
+                <li><a href="/societies">Societies</a></li>
+                <li><a href="/volunteering">Volunteering</a></li>
+                <li><a href="/events">Events</a></li>
               </ul>
             </li>            
-            <li><a href="location.html">Location</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
-            <li><a href="https://bootstrap-jafar70.c9users.io/">SOLAR</a></li>
+            <li><a href="/location">Location</a></li>
+            <li><a href="/contactus">Contact Us</a></li>
+            <li><a href="/home">SOLAR</a></li>
           </ul>
           <form method="get" action="http://www.google.com/search" class="navbar-form" role="search">
         <div class="input-group">
@@ -136,6 +136,6 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
   </body>
 </html>

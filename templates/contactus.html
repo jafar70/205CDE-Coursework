@@ -6,12 +6,12 @@
     <meta data-cloud9-id='7' name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Coventry University Student Union</title>
-    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/logo.png') }}">
 
     <!-- Bootstrap -->
-    <link data-cloud9-id='9' href="css/bootstrap.min.css" rel="stylesheet">
-    <link data-cloud9-id='10' href="css/style.css" rel="stylesheet">
-    <link data-cloud9-id='11' rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   </head>
   <body data-cloud9-id='3'>
     <!-- Fixed navbar -->
@@ -24,27 +24,27 @@
             <span data-cloud9-id='18' class="icon-bar"></span>
             <span data-cloud9-id='19' class="icon-bar"></span>
           </button>
-          <a data-cloud9-id='20' class="navbar-brand" href="index.html">
-            <img data-cloud9-id='21' id="logo" alt="Coventry University Student Union" src="images/logo.png"/>
+          <a class="navbar-brand" href="/">
+            <img id="logo" alt="Coventry University Student Union" src="{{ url_for('static', filename='images/logo.png') }}"/>
           </a>
         </div>
         <div data-cloud9-id='22' class="navbar-collapse collapse">
           <ul data-cloud9-id='23' class="nav navbar-nav navbar-left">
-            <li data-cloud9-id='24'><a data-cloud9-id='25' href="index.html">Home</a></li>       
-            <li data-cloud9-id='26'><a data-cloud9-id='27' href="aboutus.html">About Us</a></li>
+            <li data-cloud9-id='24'><a data-cloud9-id='25' href="/">Home</a></li>       
+            <li data-cloud9-id='26'><a data-cloud9-id='27' href="/aboutus">About Us</a></li>
             <li data-cloud9-id='28' class="dropdown">
-              <a data-cloud9-id='29' href="opportunities.html" class="dropdown-toggle" data-toggle="dropdown">Opportunities <b data-cloud9-id='30' class="caret"></b></a>
+              <a data-cloud9-id='29' href="#" class="dropdown-toggle" data-toggle="dropdown">Opportunities <b data-cloud9-id='30' class="caret"></b></a>
               <ul data-cloud9-id='31' class="dropdown-menu">
-                <li data-cloud9-id='32'><a data-cloud9-id='33' href="sports.html">Sports</a></li>
-                <li data-cloud9-id='34'><a data-cloud9-id='35' href="societies.html">Societies</a></li>
-                <li data-cloud9-id='36'><a data-cloud9-id='37' href="volunteering.html">Volunteering</a></li>
-                <li data-cloud9-id='38'><a data-cloud9-id='39' href="events.html">Events</a></li>
+                <li data-cloud9-id='32'><a data-cloud9-id='33' href="/sports">Sports</a></li>
+                <li data-cloud9-id='34'><a data-cloud9-id='35' href="/societies">Societies</a></li>
+                <li data-cloud9-id='36'><a data-cloud9-id='37' href="/volunteering">Volunteering</a></li>
+                <li data-cloud9-id='38'><a data-cloud9-id='39' href="/events">Events</a></li>
                 
               </ul>
             </li>            
-            <li data-cloud9-id='40'><a data-cloud9-id='41' href="location.html">Location</a></li>
-            <li data-cloud9-id='42' class="active"><a data-cloud9-id='43' href="contactus.html">Contact Us</a></li>
-            <li><a href="https://bootstrap-jafar70.c9users.io/">SOLAR</a></li>
+            <li data-cloud9-id='40'><a data-cloud9-id='41' href="/location">Location</a></li>
+            <li data-cloud9-id='42' class="active"><a data-cloud9-id='43' href="/contactus">Contact Us</a></li>
+            <li><a href="/home">SOLAR</a></li>
           </ul>
           <form data-cloud9-id='44' method="get" action="http://www.google.com/search" class="navbar-form" role="search">
         <div data-cloud9-id='45' class="input-group">
@@ -132,6 +132,6 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
   </body>
 </html>

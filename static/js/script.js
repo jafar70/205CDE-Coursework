@@ -1,4 +1,4 @@
-var Image = new Array("images/show1.jpg","images/show2.jpg","images/show3.jpg","images/show4.jpg");
+var Image = new Array("http://purplecresteducation.com/images/slider/sl2.jpg","http://purplecresteducation.com/images/slider/sl1.jpg","https://pbs.twimg.com/media/Cb4-G2EWEAANlMQ.jpg","https://thegarageflower.files.wordpress.com/2015/12/img_2899.jpg?w=1100&h=500&crop=1");
 var Image_Number = 0;
 
 var Image_length = Image.length - 1;
